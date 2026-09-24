@@ -149,7 +149,7 @@
   /* ---- Team ---- */
   .team {
     padding: 56px 0;
-    border-bottom: 1px solid var(--line);
+    border-bottom: none;
   }
   .label {
     color: var(--muted);
@@ -172,7 +172,7 @@
 
   /* ---- Image ---- */
   .visual {
-    border-bottom: 1px solid var(--line);
+    border-bottom: none;
     padding: 24px 0;
     text-align: center;
   }
@@ -331,6 +331,13 @@
 </footer>
 
 <script>
+  // Keep mobile browsers from restoring the previous scroll position on load.
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+  window.addEventListener('pageshow', function () {
+    window.scrollTo(0, 0);
+  });
+
   document.getElementById('year').textContent = new Date().getFullYear();
 
   const translations = {
