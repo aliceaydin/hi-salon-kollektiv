@@ -52,14 +52,18 @@
     flex-direction: row;
     align-items: center;
     gap: 16px;
+    min-width: 0;
     text-decoration: none;
   }
   .logo img {
-    height: 76px;
-    width: 170px;
-    object-fit: cover;
-    object-position: center 78%;
+    width: min(140px, 35vw);
+    height: 64px;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
     display: block;
+    margin-top: 8px;
+    flex-shrink: 1;
   }
   .logo span {
     font-weight: 600;
@@ -262,7 +266,7 @@
       <h1 data-i18n="heroHeading">Kollektiv, Studio, Arbeitsraum.</h1>
     </div>
     <div>
-      <p data-i18n="heroP1">Der SALON ist ein interdisziplinäres Plenum und geteilter Arbeitsraum. Wir legen unseren Schwerpunkt auf die Bereiche Grafikdesign, analoge Drucktechniken, Visuelle Identität, Typografie und Webdesign. Dabei arbeiten wir insbesondere im Feld Veranstaltungsdesign, Kunst, Performance und Theater.</p>
+      <p data-i18n="heroP1">Der SALON ist ein interdisziplinäres Plenum und geteilter Arbeitsraum. Wir legen unseren Schwerpunkt auf die Bereiche Grafikdesign, analoge Drucktechniken, Visuelle Identität, Typografie und Webdesign — mit besonderem Interesse an gesellschaftlich relevanten Themen.</p>
       <p data-i18n="heroP2">Wir realisieren eigenständige Projekte, bündeln aber unsere Kompetenzen für institutionelle Arbeit und gemeinsame Projekte. Im SALON verbinden wir unterschiedliche Schwerpunkte zu einer kollektiven Praxis.</p>
     </div>
   </div>
@@ -333,7 +337,7 @@
     de: {
       navContact: 'KONTAKT',
       heroHeading: 'Kollektiv, Studio, Arbeitsraum.',
-      heroP1: 'Der SALON ist ein interdisziplinäres Plenum und geteilter Arbeitsraum. Wir legen Schwerpunkt auf die Bereiche Grafikdesign, analoge Drucktechniken, Visuelle Identität, Typografie und Webdesign. Dabei arbeiten wir insbesondere im Feld Veranstaltungsdesign, Kunst, Performance und Theater.',
+      heroP1: 'Der SALON ist ein interdisziplinäres Plenum und geteilter Arbeitsraum. Wir legen Schwerpunkt auf die Bereiche Grafikdesign, analoge Drucktechniken, Visuelle Identität, Typografie und Webdesign — mit besonderem Interesse an gesellschaftlich relevanten Themen.',
       heroP2: 'Wir realisieren eigenständige Projekte, bündeln aber unsere Kompetenzen für institutionelle Arbeit und gemeinsame Projekte. Im SALON verbinden wir unterschiedliche Schwerpunkte zu einer kollektiven Praxis.',
       focusLabel: 'Unser Fokus',
       focusEvents: 'Events',
@@ -350,7 +354,7 @@
     en: {
       navContact: 'WORK WITH US',
       heroHeading: 'Collective, studio, workspace.',
-      heroP1: 'SALON is an interdisciplinary collective and shared workspace. Our focus lies on graphic design, analogue printing techniques, visual identity, typography and web design — with particular attention to event design, art, performance and theatre.',
+      heroP1: 'SALON is an interdisciplinary collective and shared workspace. Our focus lies on graphic design, analogue printing techniques, visual identity, typography and web design — with particular interest in socially relevant topics.',
       heroP2: 'We realise independent projects, but also combine our skills for institutional work and collaborations. At SALON, we bring different areas of focus together into one collective practice.',
       focusLabel: 'Our Focus',
       focusEvents: 'Events',
