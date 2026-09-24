@@ -40,7 +40,7 @@
   /* ---- Nav ---- */
   header.nav {
     border-bottom: 1px solid var(--line);
-    padding: 22px 0;
+    padding: 12px 0;
   }
   header.nav .wrap {
     display: flex;
@@ -49,21 +49,23 @@
   }
   .logo {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
     text-decoration: none;
   }
   .logo img {
-    height: 64px;
-    width: auto;
-    max-width: 160px;
-    object-fit: contain;
+    height: 76px;
+    width: 170px;
+    object-fit: cover;
+    object-position: center 78%;
+    display: block;
   }
   .logo span {
     font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--ink);
+    white-space: nowrap;
   }
   .nav-link {
     text-decoration: none;
